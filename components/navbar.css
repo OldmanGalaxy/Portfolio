@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'pixels';
+    src: url('/PressStart2P.ttf');
+  }
+
+.navbar-container {
+    z-index: 2;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+
+.navbar-links-container {
+    line-height: 5vh;
+    margin-top: 2.5vh;
+    width: 50vw;
+    height: 5vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-links {
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke: 0.5px #ECDFCC;
+    font-family: 'pixels';
+    font-size: 2vw;
+}
+
+.navbar-about-text::before, .navbar-projects-text::before, .navbar-home-text::before {
+    position: absolute;
+    overflow: hidden;
+    width: 0%;
+    height: 100%;
+    color: #ECDFCC;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-about-text::before {
+    content: "ABOUT-ME";
+}
+
+.navbar-projects-text::before {
+    content: "PROJECTS";
+}
+
+.navbar-home-text::before {
+    content: "HOME";
+}
+
+.navbar-about-text:hover::before {
+    width: 17vw;
+}
+
+.navbar-projects-text:hover::before {
+    width: 17vw;
+}
+
+.navbar-home-text:hover::before {
+    width: 8vw;
+}
+
+.navbar-image {
+    margin-top: 0.2rem;
+    margin-left: 0.2rem;
+    width: 5vh;
+    height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .navbar-links {
+        letter-spacing: 1px;
+    }
+
+    .navbar-links-container {
+        margin-right: 10px;
+    }
+}

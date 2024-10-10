@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    background-color: #1E201E;
+}
+
+main {
+    background-color: #1E201E;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;
+    overflow: hidden;
+}
+
+.logo-cover-container {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+}
+
+.logo-cover {
+    border-right: 200px solid #1E201E;
+    border-top: 60px solid #1E201E;
+}
+
+.smaller-screen {
+    opacity: 0;
+    position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+    .bigger-screen {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .smaller-screen {
+        opacity: 1;
+    }
+
+    .logo-cover {
+        border-bottom: none;
+        border-right: none;
+        border-left: 160px solid #1E201E;
+        border-top: 60px solid #1E201E;
+    }
+}

@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'pixels';
+  src: url('/PressStart2P.ttf');
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  background-color: #1E201E;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: -100;
+  overflow-x: hidden;
+}
+
+.marquee-container {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.marquee-container2 {
+  position: absolute;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.marquee-container2 {
+  width: 100vw;
+}
+
+.main-photo-container {
+  width: 100vw;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.main-photo-container2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.main-photo {
+  opacity: 0;
+  height: 50vw;
+  width: 50vw;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.marquee {
+  color: #ECDFCC;
+  font-family: 'pixels';
+  font-size: 2rem;
+}
+
+.hollowed-text-in-marquee {
+  color: transparent;
+  -webkit-text-stroke: 0.5px #ECDFCC;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-photo {
+    height: 100vh;
+    width: 100vh;
+  }
+
+  .marquee {
+    font-size: 25px;
+  }
+}
