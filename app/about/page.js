@@ -25,9 +25,9 @@ export default function About() {
         <div style={{position: "absolute"}}>
             <Navbar />
         </div>
-            <div class="logo-cover-container">
-                <div class="logo-cover"></div>
-            </div>
+        <div class="logo-cover-container">
+            <div class="logo-cover"></div>
+        </div>
         <main class="background-container">
             <Spline scene="https://prod.spline.design/fQYIcENmk6zyyPaH/scene.splinecode" class="bigger-screen" />
             <Spline scene="https://prod.spline.design/0ppwAgiIuJIZblf1/scene.splinecode" class="smaller-screen" />

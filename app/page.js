@@ -1,9 +1,9 @@
 'use client';
 import './main.css';
 import Navbar from '../components/Navbar';
-import Spline from '@splinetool/react-spline/next';
 import Marquee from "react-fast-marquee";
 import gsap from 'gsap';
+import Spline from '@splinetool/react-spline/next';
 import { useGSAP } from '@gsap/react';
 
 export default function Home()
@@ -43,6 +43,9 @@ export default function Home()
         <div class="main-photo-container2">
           <img src="/me2.png" class="main-photo" />
         </div>
+      </div>
+      <div class="logo-cover-container">
+        <div class="logo-cover"></div>
       </div>
       <div class="marquee-container">
         <div class="marquee-container2">

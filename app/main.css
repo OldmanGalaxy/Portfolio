@@ -74,7 +74,20 @@ main {
   -webkit-text-stroke: 0.5px #ECDFCC;
 }
 
-@media only screen and (max-width: 1200px) {
+.logo-cover-container {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+}
+
+.logo-cover {
+  border-right: 200px solid #1E201E;
+  border-top: 60px solid #1E201E;
+}
+
+@media only screen and (max-width: 1024px) {
   .main-photo {
     height: 100vh;
     width: 100vh;
