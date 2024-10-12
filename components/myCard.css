@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'pixels';
+    src: url('/PressStart2P.ttf');
+  }
+
+.card-container {
+    background-color: #3C3D37;
+    height: 100vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    height: 50%;
+    width: 100%;
+    margin-top: 5vh;
+}
+
+.my-image {
+    object-fit: contain;
+    filter: grayscale();
+}
+
+.text-container {
+    margin-top: 5vh;
+    padding-left: 1.5vh;
+    padding-right: 1.5vh;
+    font-family: 'pixels';
+    color: #ECDFCC;
+    font-size: 15px;
+    text-align: center;
+}
+
+.outlined-text {
+    color: transparent;
+    -webkit-text-stroke: 0.5px #ECDFCC;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-container {
+        margin-top: 50vh;
+        flex-direction: row;
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .text-container {
+        font-size: 9px;
+        margin-top: 90px;
+    }
+
+    .image-container {
+        height: 60%;
+        margin-top: 75px;
+    }
+}

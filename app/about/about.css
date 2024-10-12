@@ -23,11 +23,12 @@ main {
     width: 100vw;
     display: flex;
     justify-content: end;
+    z-index: -5;
 }
 
 .logo-cover {
-    border-right: 200px solid #1E201E;
-    border-top: 60px solid #1E201E;
+    border-right: 157px solid #1E201E;
+    border-top: 56px solid #1E201E;
 }
 
 .smaller-screen {
@@ -43,12 +44,5 @@ main {
 
     .smaller-screen {
         opacity: 1;
-    }
-
-    .logo-cover {
-        border-bottom: none;
-        border-right: none;
-        border-left: 160px solid #1E201E;
-        border-top: 60px solid #1E201E;
     }
 }

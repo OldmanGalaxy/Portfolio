@@ -30,14 +30,20 @@ export default function Home()
       delay: 3.5,
       duration: 0.5
     });
+
+    gsap.from(".navbar-container-absolute", {
+      top: "-10vh",
+      duration: 3,
+      delay: 2
+    });
   });
 
     return (
     <>
-    <div style={{position: "absolute"}}>
+    <div style={{position: "absolute"}} class="navbar-container-absolute">
       <Navbar />
     </div>
-    
+
     <main>
       <div class="main-photo-container">
         <div class="main-photo-container2">
@@ -54,7 +60,7 @@ export default function Home()
             </Marquee>
         </div>
       </div>
-      <Spline scene="https://prod.spline.design/QwkZoawDvcsBCTlq/scene.splinecode" />
+      <Spline scene="https://prod.spline.design/S2PJmVnjlki22IM9/scene.splinecode" />
     </main>
     </>
   );

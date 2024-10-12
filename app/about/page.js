@@ -4,27 +4,59 @@ import './about.css'
 import Navbar from '../../components/Navbar'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
+import MyCard from '../../components/MyCard';
 
 export default function About() {
-    useGSAP(() => {
-        gsap.from(".background-container", {
-            duration: 3,
-            delay: 3,
-            top: "-100vh"
-        })
 
-        gsap.from(".logo-cover-container", {
-            duration: 3,
-            delay: 3,
-            top: "-100vh"
-        })
+    let height = window.innerHeight;
+    let width = window.innerWidth;
+
+    useGSAP(() => {
+        if (width > height)
+        {
+            gsap.from(".background-container", {
+                duration: 3,
+                delay: 1,
+                top: "-100vh"
+            });
+
+            gsap.from(".logo-cover-container", {
+                duration: 3,
+                delay: 1,
+                top: "-100vh"
+            });
+        }
+        else
+        {
+            gsap.from(".background-container", {
+                duration: 3,
+                delay: 1,
+                right: "-100vw"
+            });
+
+            gsap.from(".logo-cover-container", {
+                duration: 3,
+                delay: 1,
+                right: "-100vw"
+            });
+        }
+
+        gsap.from(".navbar-container-absolute", {
+            top: "-10vh",
+            duration: 2,
+            delay: 2
+        });
     })
 
     return (
         <>
-        <div style={{position: "absolute"}}>
+        <div style={{position: "absolute"}} class="navbar-container-absolute">
             <Navbar />
         </div>
+        <div style={{position: "absolute"}}>
+            <MyCard />
+        </div>
+
         <div class="logo-cover-container">
             <div class="logo-cover"></div>
         </div>
