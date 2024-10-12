@@ -22,7 +22,8 @@
     object-fit: contain;
     height: 50%;
     width: 100%;
-    margin-top: 5vh;
+    margin-top: 5%;
+    aspect-ratio: 3 / 4;
 }
 
 .my-image {
@@ -47,19 +48,22 @@
 
 @media only screen and (max-width: 768px) {
     .card-container {
-        margin-top: 50vh;
+        position: absolute;
+        top: 60vh;
         flex-direction: row;
         width: 100vw;
-        height: 50vh;
+        height: 40vh;
     }
 
     .text-container {
-        font-size: 9px;
-        margin-top: 90px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
     }
 
     .image-container {
-        height: 60%;
-        margin-top: 75px;
+        height: 30vh;
     }
 }
