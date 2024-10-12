@@ -3,7 +3,7 @@ import './main.css';
 import Navbar from '../components/Navbar';
 import Marquee from "react-fast-marquee";
 import gsap from 'gsap';
-import Spline from '@splinetool/react-spline/next';
+import Spline from '@splinetool/react-spline';
 import { useGSAP } from '@gsap/react';
 
 export default function Home()

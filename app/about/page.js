@@ -1,5 +1,5 @@
 'use client';
-import Spline from '@splinetool/react-spline/next';
+import Spline from '@splinetool/react-spline';
 import './about.css'
 import Navbar from '../../components/Navbar'
 import gsap from 'gsap';
