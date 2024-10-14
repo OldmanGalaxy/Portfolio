@@ -50,6 +50,7 @@ export default function Home()
           <img src="/me2.png" class="main-photo" />
         </div>
       </div>
+
       <div class="logo-cover-container">
         <div class="logo-cover"></div>
       </div>
@@ -57,7 +58,7 @@ export default function Home()
         <div class="marquee-container2">
           <Marquee speed="200" className="marquee" gradient={true} gradientColor="#ECDFCC" gradientWidth={50}>
             FRONTEND-DEVELOPER&nbsp;<p class="hollowed-text-in-marquee">JAVA-PROGRAMMER</p>&nbsp;CREATIVE-DESIGNER&nbsp;<p class="hollowed-text-in-marquee">BACKEND-DEVELOPER</p>&nbsp;
-            </Marquee>
+          </Marquee>
         </div>
       </div>
       <Spline scene="https://prod.spline.design/S2PJmVnjlki22IM9/scene.splinecode" />

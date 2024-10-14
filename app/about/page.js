@@ -12,40 +12,47 @@ export default function About() {
     let width = window.innerWidth;
 
     useGSAP(() => {
+
+        gsap.from(".navbar-container-absolute", {
+            top: "-10vh",
+            duration: 3,
+            delay: 3
+        });
+
         if (width > height)
         {
-            gsap.from(".background-container", {
+            gsap.from(".mycard-container", {
+                left: "-50vw",
                 duration: 3,
-                delay: 1,
-                top: "-100vh"
+                delay: 3
+            });
+
+            gsap.from(".background-container", {
+                top: "-100vh",
+                duration: 3,
+                delay: 1
             });
 
             gsap.from(".logo-cover-container", {
+                top: "-100vh",
                 duration: 3,
-                delay: 1,
-                top: "-100vh"
-            });
+                delay: 1
+            })
         }
         else
         {
             gsap.from(".background-container", {
+                right: "-100vw",
                 duration: 3,
-                delay: 1,
-                right: "-100vw"
+                delay: 1
             });
 
-            gsap.from(".logo-cover-container", {
+            gsap.from(".mycard-container", {
+                top: "100vh",
                 duration: 3,
-                delay: 1,
-                right: "-100vw"
+                delay: 3
             });
         }
-
-        gsap.from(".navbar-container-absolute", {
-            top: "-10vh",
-            duration: 2,
-            delay: 2
-        });
     })
 
     return (
@@ -53,7 +60,7 @@ export default function About() {
         <div style={{position: "absolute"}} class="navbar-container-absolute">
             <Navbar />
         </div>
-        <div style={{position: "absolute"}}>
+        <div style={{position: "absolute"}} class="mycard-container">
             <MyCard />
         </div>
 
@@ -61,8 +68,12 @@ export default function About() {
             <div class="logo-cover"></div>
         </div>
         <main class="background-container">
-            <Spline scene="https://prod.spline.design/fQYIcENmk6zyyPaH/scene.splinecode" class="bigger-screen" />
-            <Spline scene="https://prod.spline.design/0ppwAgiIuJIZblf1/scene.splinecode" class="smaller-screen" />
+            <div class="bigger-screen-container">
+                <Spline scene="https://prod.spline.design/fQYIcENmk6zyyPaH/scene.splinecode" class="bigger-screen" />
+            </div>
+            <div class="smaller-screen-container">
+                <Spline scene="https://prod.spline.design/aFcTWLvW-tFtkroN/scene.splinecode" class="smaller-screen" />
+            </div>
         </main>
         </>
   );

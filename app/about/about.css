@@ -26,9 +26,20 @@ main {
     z-index: -5;
 }
 
+.background-container {
+    height: 100vh;
+    width: 100vw;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
 .logo-cover {
     border-right: 157px solid #1E201E;
     border-top: 56px solid #1E201E;
+}
+
+.bigger-screen-container {
+    height: 100vh;
 }
 
 .smaller-screen {
@@ -37,6 +48,17 @@ main {
 }
 
 @media only screen and (max-width: 768px) {
+    .bigger-screen-container {
+        height: 0;
+        position: absolute;
+    }
+
+    .image-container {
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+    }
+
     .bigger-screen {
         opacity: 0;
         position: absolute;

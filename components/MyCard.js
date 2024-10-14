@@ -5,7 +5,9 @@ export default function MyCard() {
         <>
         <div class="card-container">
             <div class="image-container">
-                <img src="/me.jpg" alt="Purv Kabaria" class="my-image"/>
+                <div class="image-container2">
+                    <img src="/me.jpg" alt="Purv Kabaria" class="my-image"/>
+                </div>
             </div>
             <div class="text-container">
                 <p class="outlined-text">I am currently a <br /> </p>
