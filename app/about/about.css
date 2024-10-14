@@ -29,8 +29,6 @@ main {
 .background-container {
     height: 100vh;
     width: 100vw;
-    /* display: flex; */
-    /* justify-content: center; */
 }
 
 .logo-cover {
@@ -51,12 +49,6 @@ main {
     .bigger-screen-container {
         height: 0;
         position: absolute;
-    }
-
-    .image-container {
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
     }
 
     .bigger-screen {

@@ -5,6 +5,7 @@ import Marquee from "react-fast-marquee";
 import gsap from 'gsap';
 import Spline from '@splinetool/react-spline';
 import { useGSAP } from '@gsap/react';
+import Contact from '../components/Contact';
 
 export default function Home()
 {
@@ -36,12 +37,21 @@ export default function Home()
       duration: 3,
       delay: 2
     });
+
+    gsap.from(".contact-container-absolute", {
+      top: "100vh",
+      duration: 1,
+      delay: 3
+    })
   });
 
     return (
     <>
     <div style={{position: "absolute"}} class="navbar-container-absolute">
       <Navbar />
+    </div>
+    <div style={{position: "absolute"}} class="contact-container-absolute">
+      <Contact />
     </div>
 
     <main>

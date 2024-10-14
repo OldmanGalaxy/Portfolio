@@ -87,6 +87,10 @@ main {
   border-top: 56px solid #1E201E;
 }
 
+.contact-container-absolute {
+  bottom: 0;
+}
+
 @media only screen and (max-width: 1024px) {
   .main-photo {
     height: 100vh;

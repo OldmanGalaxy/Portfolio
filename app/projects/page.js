@@ -11,6 +11,9 @@ export default function Projects()
       <Navbar />
     </div>
     
+    <div class="logo-cover-container">
+      <div class="logo-cover"></div>
+    </div>
     <main>
       <Spline scene="https://prod.spline.design/QwkZoawDvcsBCTlq/scene.splinecode" />
     </main>

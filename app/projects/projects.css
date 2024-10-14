@@ -19,3 +19,16 @@
     z-index: -100;
     overflow-x: hidden;
   }
+
+  .logo-cover-container {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+  }
+  
+  .logo-cover {
+    border-right: 157px solid #1E201E;
+    border-top: 56px solid #1E201E;
+  }

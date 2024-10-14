@@ -22,7 +22,7 @@ export default function About() {
         if (width > height)
         {
             gsap.from(".mycard-container", {
-                left: "-50vw",
+                left: "-100vw",
                 duration: 3,
                 delay: 3
             });
