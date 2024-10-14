@@ -6,6 +6,7 @@ import gsap from 'gsap';
 import Spline from '@splinetool/react-spline';
 import { useGSAP } from '@gsap/react';
 import Contact from '../components/Contact';
+// npm install gsap @gsap/react @splinetool/react-spline react-fast-marquee
 
 export default function Home()
 {

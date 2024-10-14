@@ -5,11 +5,16 @@ import Navbar from '../../components/Navbar'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import MyCard from '../../components/MyCard';
+import * as React from 'react';
 
 export default function About() {
 
-    let height = window.innerHeight;
-    let width = window.innerWidth;
+    let height = 0;
+    let width = 0;
+    React.useEffect(() => {
+        height = window.innerHeight;
+        width = window.innerWidth;
+    }, []);
 
     useGSAP(() => {
 
