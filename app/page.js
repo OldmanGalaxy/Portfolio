@@ -48,27 +48,27 @@ export default function Home()
 
     return (
     <>
-    <div style={{position: "absolute"}} class="navbar-container-absolute">
+    <div style={{position: "absolute"}} className="navbar-container-absolute">
       <Navbar />
     </div>
-    <div style={{position: "absolute"}} class="contact-container-absolute">
+    <div style={{position: "absolute"}} className="contact-container-absolute">
       <Contact />
     </div>
 
     <main>
-      <div class="main-photo-container">
-        <div class="main-photo-container2">
-          <img src="/me2.png" class="main-photo" />
+      <div className="main-photo-container">
+        <div className="main-photo-container2">
+          <img src="/me2.png" className="main-photo" />
         </div>
       </div>
 
-      <div class="logo-cover-container">
-        <div class="logo-cover"></div>
+      <div className="logo-cover-container">
+        <div className="logo-cover"></div>
       </div>
-      <div class="marquee-container">
-        <div class="marquee-container2">
+      <div className="marquee-container">
+        <div className="marquee-container2">
           <Marquee speed="200" className="marquee" gradient={true} gradientColor="#ECDFCC" gradientWidth={50}>
-            FRONTEND-DEVELOPER&nbsp;<p class="hollowed-text-in-marquee">JAVA-PROGRAMMER</p>&nbsp;CREATIVE-DESIGNER&nbsp;<p class="hollowed-text-in-marquee">BACKEND-DEVELOPER</p>&nbsp;
+            FRONTEND-DEVELOPER&nbsp;<p className="hollowed-text-in-marquee">COMPETITIVE-PROGRAMMER</p>&nbsp;CREATIVE-DESIGNER&nbsp;<p className="hollowed-text-in-marquee">BACKEND-DEVELOPER</p>&nbsp;
           </Marquee>
         </div>
       </div>

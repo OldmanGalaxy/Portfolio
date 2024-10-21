@@ -62,22 +62,22 @@ export default function About() {
 
     return (
         <>
-        <div style={{position: "absolute"}} class="navbar-container-absolute">
+        <div style={{position: "absolute"}} className="navbar-container-absolute">
             <Navbar />
         </div>
-        <div style={{position: "absolute"}} class="mycard-container">
+        <div style={{position: "absolute"}} className="mycard-container">
             <MyCard />
         </div>
 
-        <div class="logo-cover-container">
-            <div class="logo-cover"></div>
+        <div className="logo-cover-container">
+            <div className="logo-cover"></div>
         </div>
-        <main class="background-container">
-            <div class="bigger-screen-container">
-                <Spline scene="https://prod.spline.design/fQYIcENmk6zyyPaH/scene.splinecode" class="bigger-screen" />
+        <main className="background-container">
+            <div className="bigger-screen-container">
+                <Spline scene="https://prod.spline.design/fQYIcENmk6zyyPaH/scene.splinecode" className="bigger-screen" />
             </div>
-            <div class="smaller-screen-container">
-                <Spline scene="https://prod.spline.design/aFcTWLvW-tFtkroN/scene.splinecode" class="smaller-screen" />
+            <div className="smaller-screen-container">
+                <Spline scene="https://prod.spline.design/aFcTWLvW-tFtkroN/scene.splinecode" className="smaller-screen" />
             </div>
         </main>
         </>
