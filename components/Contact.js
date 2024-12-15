@@ -19,7 +19,7 @@ export default function Contact() {
                 </a>
             </div>
             <div className="resume-container">
-                <a href="https://drive.google.com/file/d/1n34i3rwhJOr-0iFR5sGzWkUuOuGkLmLG/view?usp=drive_link">
+                <a href="https://drive.google.com/file/d/1w2mGVY4uA2AChVBPiWpP2ZD-X3j0JMgZ/view?usp=sharing">
                     Resume
                 </a>
             </div>
